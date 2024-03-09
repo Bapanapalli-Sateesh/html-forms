@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet up Form</title>
+</head>
+<body>
+    
+    <form action="https://httpbin.org/get" method="get" name="form" id="form">
+
+        <fieldset>
+            <legend align="center"><h1>A Meet up Form</h1></legend>
+
+            <div>
+                <label for="name">Full Name:</label>
+                <br>
+                <input type="text" name="name" id="name" value="John Doe" placeholder="enter your name" size="20" maxlength="15" autocomplete="on" autofocus required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="event">Name of the event:</label>
+                <br>
+                <input type="text" name="event" id="event" value="JS Fest" readonly>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="age">Age:</label>
+                <br>
+                <input type="number" name="age" id="age" value="18" min="18" max="50" step="10">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mail">Email:</label>
+                <br>
+                <input type="email" name="mail" id="mail">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mobile">Contact number:</label>
+                <br>
+                <input type="tel" name="mobile" id="mobile">
+            </div>
+
+            <br>
+
+            <div>
+                <p>Gender:</p>
+
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" name="gender" id="feMale">
+                <label for="feMale">Female</label>
+            </div>
+
+            <br>
+
+            <div>
+                <p>Your Skills:</p>
+                
+                <input type="checkbox" name="skill" id="html">
+                <label for="html">HTML</label>
+                <br>
+                <input type="checkbox" name="skill" id="css">
+                <label for="css">CSS</label>
+                <br>
+                <input type="checkbox" name="skill" id="js">
+                <label for="js">JavaScript</label>
+                <br>
+                <input type="checkbox" name="skill" id="react">
+                <label for="react">React.js</label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="meet">Preferred time for Meetup:</label>
+                <br>
+                <input type="date" name="meet" id="meet">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="topic">Choose the topic for th emeetup:</label>
+                <br>
+                <select name="topic" id="topic">
+                    <option value="select" selected>Choose</option>
+                    <option value="HTML">HTML Concepts</option>
+                    <option value="css">CSS concepts</option>
+                    <option value="js">JavaScript concepts</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="qns">Any question?</label>
+                <br>
+                <textarea name="qns" id="qns" cols="30" rows="3"></textarea>
+            </div>
+
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        </fieldset>
+    </form>
+</body>
+</html>
