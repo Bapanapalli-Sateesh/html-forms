@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLIPKART VENDOE FORM</title>
+</head>
+<body>
+    <form action="https://httpbin.org/get" method="get" name="form" id="form">
+
+        <fieldset>
+            <legend align="center">Flipkart Vendor Form</legend>
+
+            <div>
+                <label for="name">Full Name:</label>
+               
+                <br>    <!-- size attribute specifies the input box length & maxlength is the length of data entered & readonly is for non-editable data.-->
+               
+                <input type="text" name="fname" id="name" value="John" placeholder="sateesh" size="20" maxlength="15" autocomplete="on" autofocus required>
+                <input type="text" name="lname" id="name" value="Doe" placeholder="bapanapalli" size="20" maxlength="15" autocomplete="on" autofocus required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="DOB">Date of Birth:</label>
+                <br>
+                <input type="date" name="DOB" id="DOB" required>
+            </div>
+
+            <div>
+                <p>Are you in India?</p>
+
+                <input type="radio" name="loc" id="yes">
+                <label for="yes">Yes</label>
+
+                <input type="radio" name="loc" id="no">
+                <label for="no">No</label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="address-present">Current Address:</label>
+                <br>
+                <textarea name="address-present" id="address-present" cols="30" rows="5"></textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="address-permanent">Permanent Address:</label>
+                <br>
+                <textarea name="address-permanent" id="address-permanent" cols="30" rows="5"></textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mail">Email:</label>
+                <br>
+                <input type="email" name="mail" id="mail">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="aadhar">Upload your Identity:</label>
+                <br>
+                <input type="file" name="aadhar" id="aadhar">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="pan">Upload your PAN:</label>
+                <br>
+                <input type="file" name="pan" id="pan">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="panNumber">Enter your PAN number:</label>
+                <br>
+                <input type="tel" name="panNumber" id="panNumber" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="photo">Upload your Photo:</label>
+                <br>
+                <input type="file" name="photo" id="photo">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="items">Items to sell:</label>
+                <br>
+                <select name="items" id="items" size="5" multiple>  <!-- in select, multiple attribute renders as opened dropdown of group of elements & based on size attribute, no. of items will be shown.-->
+                    <option value="select" disabled>choose</option>
+                    <optgroup label="mensWear">
+                        <option value="shirt">Formal Shirts</option>
+                        <option value="tShirt">T-Shirt</option>
+                        <option value="trouser">Trousers</option>
+                        <option value="shoe">Shoes</option>
+                    </optgroup>
+
+                    <optgroup label="Women">
+                        <option value="tops">Tops & tees</option>
+                        <option value="kurti">Kurtis</option>
+                        <option value="saree">Sarees</option>
+                        <option value="jewellery">Jewellery</option>
+                    </optgroup>
+
+                    <optgroup label="mobiles">
+                        <option value="vivo">Vivo</option>
+                        <option value="realme">Realme</option>
+                        <option value="redmi">Red MI</option>
+                        <option value="oppo">Oppo</option>
+                        <option value="onePlus">One Plus</option>
+                    </optgroup>
+                    
+                    <optgroup label="laptops">
+                        <option value="hp">HP</option>
+                        <option value="lenovo">Lenovo</option>
+                        <option value="dell">Dell</option>
+                    </optgroup>
+                    <option value="other">Others</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Locations open for delivery:</p>
+
+                <input type="checkbox" name="delivery" id="delhi">
+                <label for="delhi">Delhi</label>
+                <br>
+                <input type="checkbox" name="delivery" id="mumbai">
+                <label for="mumbai">Mumbai</label>
+                <br>
+                <input type="checkbox" name="delivery" id="blr">
+                <label for="blr">Bangalore</label>
+                <br>
+                <input type="checkbox" name="delivery" id="chennei">
+                <label for="chennei">Chennei</label>
+                <br>
+                <input type="checkbox" name="delivery" id="hyd">
+                <label for="hyd">Hyderabd</label>
+            </div>
+
+            <br>
+
+            <button type="submit">Sumbit</button>
+            <button type="reset">Reset</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button> <!-- just to see the data - post method  -->
+        </fieldset>
+    </form>
+</body>
+</html>
