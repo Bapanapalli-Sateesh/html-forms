@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Sign up Form</title>
+</head>
+<body>
+    
+    <form action="https://httpbin.org/get" method="get" name="form" id="form">
+
+        <fieldset>
+            <legend align="center">Sign up Form</legend>
+
+            <div>
+                <label for="fullName">Enter your Full Name:</label>
+                <br>
+                <input type="text" name="fullName" id="fullName" value="Full Name" placeholder="sateesh bapanapalli" size="30" maxlength="20" autocomplete="on" required autofocus>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mailId">Enter yoyr mail ID:</label>
+                <br>
+                <input type="email" name="mailId" id="mailId">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="psd">Enter your password:</label>
+                <br>
+                <input type="password" name="psd" id="psd" pattern=".{6,}" title="The password must be atleast 6 characters." required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="rePsd">Re - Enter your password:</label>
+                <br>
+                <input type="password" name="rePsd" id="rePsd" pattern=".{6,}" title="The password must be atleast 6 characters." required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="dob">Enter your Date of Birth:</label>
+                <br>
+                <input type="date" name="dob" id="dob" min="1950" max="2050">
+            </div>
+
+            <br>
+
+            <div>
+                <p>Your Gender:</p>
+
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="other">Other</label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="profile">Upload your image:</label>
+                <br>
+                <input type="file" name="profile" id="profile">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="message">Write your message:</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="5"></textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">I agree terms and conditions</label>
+            </div>
+
+            <br>
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        </fieldset>
+    </form>
+</body>
+</html>
